@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventZapster - Discover & Advertise Events</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EventZapster</div> 
+            <div class="nav-container">
+            <ul>
+                <li><button>Home</button></li>
+                <li><button id="explore-event">Explore Event</button></li>
+
+                <li><button id="add-event">Advertise</button></li>
+                <li><button>Reviews</button></li>
+                <li><button>Contact</button></li>
+            </ul>
+            </div>
+            <div class="auth-buttons">
+                <button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>
+            </div>
+           
+        </nav>
+    
+    </header>
+   
+    <section class="trending-events">
+        <h2>Trending Events in Your Area</h2>
+        <div class="location-filter">
+            <label for="location">Select Your Location:</label>
+            <select id="location">
+                <option value="global">All Trending Events</option>
+                <option value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="london">London</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+        </div>
+        <div class="events-container">
+            <div class="event-card">
+                <img src="event1.jpg" alt="Event 1">
+                <h3>Music Festival 2025</h3>
+                <p>New York City - March 15, 2025</p>
+            </div>
+            <div class="event-card">
+                <img src="event2.jpg" alt="Event 2">
+                <h3>Tech Conference 2025</h3>
+                <p>San Francisco - April 10, 2025</p>
+            </div>
+            <div class="event-card">
+                <img src="event3.jpg" alt="Event 3">
+                <h3>Food Carnival</h3>
+                <p>London - May 5, 2025</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="main.js"></script>
+
+
+    
+</body>
+</html>

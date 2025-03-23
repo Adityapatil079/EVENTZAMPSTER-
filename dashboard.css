@@ -1,0 +1,220 @@
+
+nav {
+    background-color: #d63384; /* Navbar color */
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between; /* Logo on left, nav center, auth buttons right */
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Style for the logo - aligns to the left */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Center navigation items */
+.nav-container {
+    flex: 1; /* Ensures nav items are centered */
+    display: flex;
+    justify-content: center;
+}
+
+/* Remove list styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Style the buttons inside the navbar */
+nav button {
+    background-color: #f06292; /* Button color */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Sign In and Sign Up buttons */
+.sign-in {
+    background-color: #ffb74d; /* Light orange */
+}
+
+.sign-up {
+    background-color: #4caf50; /* Green */
+}
+
+/* Hover effects */
+nav button:hover {
+    opacity: 0.8;
+}
+/* Event Categories Section */
+.event-categories {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffe6f2; /* Light pink background */
+}
+
+.event-categories h2 {
+    font-size: 24px;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* Categories container */
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Category buttons */
+.category-btn {
+    background: linear-gradient(135deg, #ff4081, #d63384); /* Gradient effect */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+.category-btn:hover {
+    background: linear-gradient(135deg, #d63384, #ff4081);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories-container {
+        flex-direction: column;
+    }
+
+    .category-btn {
+        width: 80%;
+        margin: 5px auto;
+    }
+}
+/* Trending Events Section */
+.trending-events {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff5f8; /* Light pink background for a soft look */
+}
+
+.trending-events h2 {
+    font-size: 24px;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* Location Filter Dropdown */
+.location-filter {
+    margin-bottom: 20px;
+}
+
+.location-filter label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #444;
+}
+
+.location-filter select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 2px solid #d63384;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    background: white;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.event-card h3 {
+    font-size: 18px;
+    color: #d63384;
+    margin-bottom: 5px;
+}
+
+.event-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.user-profile {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+
+
+
+
+

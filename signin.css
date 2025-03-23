@@ -1,0 +1,66 @@
+/* Background Styling */
+body {
+    background: #e6f2ff; /* Light blue background */
+    font-family: Arial, sans-serif;
+}
+
+/* Auth Container - Centers the form */
+.auth-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form Headings */
+.auth-container h2 {
+    color: #1e88e5;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+.auth-container button {
+    width: 100%;
+    padding: 10px;
+    background: #1e88e5;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-container button:hover {
+    background: #1565c0;
+}
+
+/* Links */
+.auth-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.auth-container a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}

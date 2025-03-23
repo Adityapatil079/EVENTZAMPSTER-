@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Events - EventZapster</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EventZapster</div>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="addevent.html">Add Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="filter-section">
+        <h2>Find Events</h2>
+        <div class="filters">
+            <input type="text" id="locationFilter" placeholder="Enter Location">
+            <input type="date" id="dateFilter">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="music">Music</option>
+                <option value="sports">Sports</option>
+                <option value="education">Education</option>
+                <option value="tech">Tech</option>
+            </select>
+            <button id="applyFilters">Apply Filters</button>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <h2>Available Events</h2>
+        <div class="events-container" id="eventContainer">
+            <!-- Events will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <script src="explore.js"></script>
+</body>
+</html>
+

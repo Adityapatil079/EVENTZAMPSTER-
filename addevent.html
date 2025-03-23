@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event - EventZapster</title>
+    <link rel="stylesheet" href="addevent.css">
+</head>
+<body>
+    <header>
+        <h1>Add Your Event</h1>
+        <button id="back-to-dashboard">Back to Dashboard</button>
+    </header>
+
+    <section class="event-form">
+        <h2>Event Details</h2>
+        <form id="eventForm">
+            <label for="title">Event Title:</label>
+            <input type="text" id="title" required>
+        
+            <label for="location">Event Location:</label>
+            <input type="text" id="location" required>
+            
+            <label for="event-type">Event Type:</label>
+            <select id="event-type" required>
+                <option value="">Select Type</option>
+                <option value="education">Education</option>
+                <option value="sports">Sports</option>
+                <option value="shopping">Shopping</option>
+                <option value="entertainment">Entertainment</option>
+            </select>
+            
+            <label for="event-time">Event Time:</label>
+            <input type="datetime-local" id="event-time" required>
+
+            <label for="fee">Entry Fee (if any):</label>
+            <input type="number" id="fee" placeholder="Enter amount or 0 if free" required>
+            
+            <label for="description">Event Description:</label>
+            <textarea id="description" required></textarea>
+
+            <label for="event-image">Upload Image:</label>
+            <input type="file" id="event-image" accept="image/*">
+            
+            <label for="event-video">Upload Video:</label>
+            <input type="file" id="event-video" accept="video/*">
+        
+            <button type="submit">Add Event</button>
+        </form>
+        <h2>Event List</h2>
+        <ul id="eventList"></ul>
+    </section>
+
+    <script src="addevent.js"></script>
+</body>
+</html>
